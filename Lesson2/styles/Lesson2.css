@@ -1,0 +1,56 @@
+Body{
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    background-color: #87CEEB; 
+    height: 60px;            
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: sticky; 
+    top: 0;
+    z-index: 100; 
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.SectionFrame{
+    height: 50vh;
+    padding: 40px 20px;
+}
+
+.MoveBar{
+    background-color: #ADFF2F;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: sticky;
+    top: 60px; 
+    z-index: 90;
+}
+
+.ButtonFrame{
+    width: 120px;
+    height: 120px;
+    background-color: #FA8072;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100; 
+}
