@@ -1,3 +1,4 @@
 Hello,world
 
 明太パスタって海苔が本体ですよね
+DesignWAKU用のリポジトリにするつもりです
