@@ -1,19 +1,10 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting';
+const pageTitle = "Home Page";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<a href="/">ホーム</a>
-        <a href="/about/">about</a>
-		<a href="/blog/">blog</a>
-		<h1>My Astro site❤️</h1>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>私の素晴らしいブログのサブタイトル</h2>
+  <Greeting messages={["どうも", "こんにちは", "初めまして", "ようこそ"]} />
+  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+</BaseLayout>

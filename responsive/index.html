@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__title">高さ80pxのヘッダー (lightblue: #ADD8E6)</h1>
+      <button type="button" id="hamburger" class="header__hamburger hamburger">
+        <span class="hamburger__line"></span>
+      </button>
+    </header>
+    <nav id="navModal" class="nav-modal">
+      <ul class="nav-modal__list">
+        <li class="nav-modal__item">
+          <a href="#" class="nav-modal__link">Home</a>
+        </li>
+        <li class="nav-modal__item">
+          <a href="#" class="nav-modal__link">About</a>
+        </li>
+        <li class="nav-modal__item">
+          <a href="#" class="nav-modal__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <aside class="sidebar">
+        <h2 class="sidebar__title">
+          幅200pxのサイドバー (lightgreen: #90EE90)
+        </h2>
+        <nav class="sidebar__nav">
+          <ul class="sidebar__nav-list">
+            <li class="sidebar__nav-item">
+              <a href="#" class="sidebar__nav-link">Home</a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="#" class="sidebar__nav-link">About</a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="#" class="sidebar__nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="content">
+        <section class="section">
+          <h2 class="section__title">Section 1 (lightcoral: #F08080)</h2>
+          <p class="section__text section__text--sp-only">
+            SP(768px以下)の時に表示されるよ
+          </p>
+          <p class="section__text section__text--pc-only">
+            PC(768pxより大きい)の時に表示されるよ
+          </p>
+        </section>
+        <section class="section">
+          <h2 class="section__title">Section 2 (lightcoral: #F08080)</h2>
+        </section>
+        <section class="section">
+          <h2 class="section__title">Section 3 (lightcoral: #F08080)</h2>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">高さ60pxのフッター (lightgray: #D3D3D3)</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
